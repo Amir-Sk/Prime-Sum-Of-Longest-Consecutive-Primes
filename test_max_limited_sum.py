@@ -23,7 +23,7 @@ class TestClass:
         assert all([actualPrime == expectedPrime
                     for actualPrime, expectedPrime in zip(primesArray, [2, 3, 5, 7, 11, 13, 17, 19, 23])])
         print("\nPrimes sequence: {}".format(primesArray))
-        print("Maximal number, lower then {} with longest consecutive primes sequence is: {}".format(limit, maxSum))
+        print("Maximal number, lower than {} with longest consecutive primes sequence is: {}".format(limit, maxSum))
 
     def test_negative_given_illegal_limit_expect_value_error(self, instance):
         limit = 1
